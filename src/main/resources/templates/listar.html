@@ -7,7 +7,7 @@
 <body>
     <p th:text="'Lista de usuarios:'" />
     <table>
-	    <th:block th:each="user : ${lista}">
+	    <th:block th:each="user : ${usuarios}">
 	    	<tr>
 	    		<td th:text="${user.id}"></td>
 	    		<td th:text="${user.usuario}"></td>

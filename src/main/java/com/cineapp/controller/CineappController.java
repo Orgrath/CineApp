@@ -31,8 +31,8 @@ public class CineappController {
 	}
 	
 	@GetMapping("/listar")
-	public String greeting(Model model) {
-		model.addAttribute("lista", repo.findAll()); 
+	public String listaUsuarios(Model model) {
+		model.addAttribute("usuarios", repo.findAll()); 
 		return "listar";
 	}
 }
